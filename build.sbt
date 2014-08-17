@@ -13,10 +13,10 @@ scalaVersion := "2.11.2"
 scalacOptions ++= Seq(
     "-encoding", "utf8",
     "-language:implicitConversions",
-    "target:jvm-1.7",
+    "-target:jvm-1.7",
     "-Ybackend:GenBCode",
     "-Yclosure-elim",
-    "Ydelambdafy:method",
+    "-Ydelambdafy:method",
     "-optimise",
     "-Yinline-warnings",
     "-Xlint",
