@@ -30,7 +30,7 @@ scalacOptions ++= Seq(
     "-Ywarn-nullary-unit",
     "-Ywarn-numeric-widen",
     "-Ywarn-unused",
-    "-Ywarn-value-disacrd",
+    "-Ywarn-value-discard",
     "-deprecation",
     "-feature",
     "-unchecked"
