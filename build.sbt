@@ -2,6 +2,10 @@ import OneLogKeys._
 
 name := "elements-of-computing-systems"
 
+organization := "com.lespea"
+
+organizationName := "Lespea scala projects"
+
 version := "0.1"
 
 scalaVersion := "2.11.2"
