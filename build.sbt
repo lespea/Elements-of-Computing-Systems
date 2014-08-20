@@ -20,7 +20,7 @@ scalacOptions ++= Seq(
     "-optimise",
     "-Yinline-warnings",
     "-Xlint",
-    "-Xprint-types",
+    //"-Xprint-types",
     "-Yno-adapted-args",
     "-Ywarn-adapted-args",
     "-Ywarn-dead-code",
@@ -72,3 +72,6 @@ testScalaStyle := {
 resolvers += "linter" at "http://hairyfotr.github.io/linteRepo/releases"
 
 addCompilerPlugin("com.foursquare.lint" %% "linter" % "0.1-SNAPSHOT")
+
+scapegoatVerbose := false
+
