@@ -33,4 +33,12 @@ final class BasicTests extends WordSpec with LogicTests {
       ((false, true), true),
       ((true, true), true)))
   }
+
+  "An Xor gate" should {
+    behave like validLogicTable(Xor, Seq(
+      ((false, false), false),
+      ((true, false), true),
+      ((false, true), true),
+      ((true, true), false)))
+  }
 }
