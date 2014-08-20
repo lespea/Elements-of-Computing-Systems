@@ -25,4 +25,12 @@ final class BasicTests extends WordSpec with LogicTests {
       ((false, true), false),
       ((true, true), true)))
   }
+
+  "An Or gate" should {
+    behave like validLogicTable(Or, Seq(
+      ((false, false), false),
+      ((true, false), true),
+      ((false, true), true),
+      ((true, true), true)))
+  }
 }
