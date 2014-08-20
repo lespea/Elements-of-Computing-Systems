@@ -1,6 +1,6 @@
 package testing.basic
 
-import com.lespea.elements.basic.Nand
+import com.lespea.elements.basic.{ Not, Nand }
 import org.scalatest.WordSpec
 
 final class BasicTests extends WordSpec with LogicTests {
@@ -10,5 +10,11 @@ final class BasicTests extends WordSpec with LogicTests {
       ((true, false), true),
       ((false, true), true),
       ((true, true), false)))
+  }
+
+  "A Not gate" should {
+    behave like validLogicTable(Not, Seq(
+      (false, true),
+      (true, false)))
   }
 }
